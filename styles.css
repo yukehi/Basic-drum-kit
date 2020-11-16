@@ -56,6 +56,7 @@ background-image: url('images/kick.png');
 .pressed {
   box-shadow: 0 3px 4px 0 #DBEDF3;
   opacity: 0.5;
+  transform: scale(0.9);
 }
 
 .red {
@@ -80,6 +81,3 @@ background-image: url('images/kick.png');
   background-color: white;
 }
 
-.drum:active{
-  transform: scale(0.9);
-}

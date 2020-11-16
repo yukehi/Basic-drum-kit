@@ -1,12 +1,15 @@
-var numberOfFrumButtons = document.querySelectorAll(".drum").length;
+let numberOfFrumButtons = document.querySelectorAll(".drum").length;
 
-for (var i = 0; i < numberOfFrumButtons; i++) {
+for (let i = 0; i < numberOfFrumButtons; i++) {
 
     document.querySelectorAll(".drum")[i].addEventListener('click', function () {
 
-        let buttonInnerHTML = this.innerHTML;
+        let buttonInnerHTML = this.innerText;
 
         makeSound(buttonInnerHTML);
+
+        buttonAnimtion(buttonInnerHTML);
+
 
     });
 
@@ -16,6 +19,7 @@ for (var i = 0; i < numberOfFrumButtons; i++) {
 document.addEventListener('keydown', function (event) {
 
     makeSound(event.key);
+    buttonAnimtion(event.key);
 
 })
 
@@ -61,4 +65,15 @@ function makeSound(key) {
             break;
     }
 
+}
+
+function buttonAnimtion(currentKey) {
+
+    let activeButton = document.querySelector("." + currentKey);
+
+    activeButton.classList.add('pressed');
+
+    setTimeout(function () {
+        activeButton.classList.remove("pressed");
+    }, 100);
 }
