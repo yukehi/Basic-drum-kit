@@ -16,31 +16,31 @@ footer {
   font-family: sans-serif;
 }
 
-.w {
+.q {
 background-image: url('images/kick.png');
 }
 
-.a {
+.w {
   background-image: url('images/snare.png');
 }
 
-.s {
+.e {
   background-image: url('images/tom1.png');
 }
 
-.d {
+.r {
   background-image: url('images/tom2.png');
 }
 
-.j {
+.t {
   background-image: url('images/tom3.png');
 }
 
-.k {
+.y {
   background-image: url('images/tom4.png');
 }
 
-.l {
+.u {
   background-image: url('images/crash.png');
 }
 
@@ -80,4 +80,45 @@ background-image: url('images/kick.png');
   margin: 10px;
   background-color: white;
 }
+.piano{
+  border-radius: 15px;
+  border-style: none;
+  
+}
+.piano-key{
+  width: 50px;
+  height: 200px;
+  margin: 0 0 0 0 ;
+  background-color: white;
+  outline: none;
+  color:black;
 
+}
+
+.black-key{
+  width: 50px;
+  height: 100px;
+  background-color: black;
+  outline: none;
+  position: absolute;
+  color: white;
+}
+.position1{
+  left: 670px;
+}
+
+.position2{
+  left: 730px;
+}
+
+.position3{
+  left: 835px;
+}
+
+.position4{
+  left: 890px;
+}
+
+.position5{
+  left: 945px;
+}
